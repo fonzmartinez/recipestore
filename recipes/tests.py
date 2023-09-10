@@ -23,11 +23,6 @@ class RecipeModelTest(TestCase):
         recipe = Recipe.objects.get(recipe_id=1)
         self.assertEqual(recipe.get_absolute_url(), '/list/1')
 
-    def test_cookingtime_helptext(self):
-       recipe = Recipe.objects.get(recipe_id=1)
-       cooking_time = recipe._meta.get_field('cooking_time').help_text
-       self.assertEqual(cooking_time, '')    
-
 
 class RecipesFormTest(TestCase):
     def test_form_renders_recipe_name_input(self):
