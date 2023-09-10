@@ -1,0 +1,63 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'recipes/css/style.css' %}">
+</head>
+
+<!DOCTYPE html>
+<html>
+<title> Recipes Logout</title>
+
+<header>
+  <h1 style="text-align: center;">"You've successfully logged out"</h1>
+</header>
+
+<body>
+  <h2 style="text-align: center;">Still hungry? Log back in below.</h2>
+  <br>
+  <div style="text-align: center;">
+    <img src="{% static 'recipes/images/plate2.jpg' %}" width="1200" height="600">
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div style="text-align: center; font-size: 35px;">
+    <a href="{%url 'login' %}">Login</a>
+  </div>
+  <br>
+  <br>
+</body>
+
+</html>
+
+
+
+
+
+<!-- 
+
+  background: url("{% static 'recipes/images/home_background.jpg' %}") no-repeat fixed;
+            background-size: cover;
+
+<h1 style="text-align: center;">"You've successfully logged out"</h1>
+
+<h1 style="text-align: center;">Still hungry? Log back in below.</h1>
+
+{% if error_message %}
+{{error_message}}
+{% endif %}
+
+
+<form action="" method="POST">
+
+  {% csrf_token %}
+
+  {{form}}
+
+  <a href="{%url 'login' %}"> Login </a>
+</form>
+
+
+
+-->

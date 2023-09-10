@@ -1,0 +1,48 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'recipes/css/style.css' %}">
+  <style>
+    body {
+      background: url("{% static 'recipes/images/kitchen_background_2.jpg' %}") no-repeat fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<header>
+  <a class="main_logout" href="{%url 'logout' %}"> Logout </a>
+  <a class="about_me" href="https://fonzmartinez.github.io/portfolio-website/index.html"> About Me </a>
+  <br>
+  <br>
+</header>
+
+<body>
+  <h1>Recipes' list</h1>
+
+  <br>
+  <br>
+
+
+  <div style="text-align: center; font-size: 21px;">
+    <a href="{%url 'recipes:records' %}">Search for Recipes</a>
+  </div>
+
+  <br>
+  <br>
+
+  <table border="1" cellpadding="5" cellspacing="5" style="text-align: center; margin: auto;">
+    <tr style="font-size: 24px; font-weight: bold; font-style: Times New Roman;">
+      <td>Recipes' Titles</td>
+      <td>Recipes' Images</td>
+    </tr>
+    {% for object in object_list %}
+    <tr>
+      <td style="font-size: 24px; font-style: Times New Roman;">
+        <a href="{{object.get_absolute_url}}">{{object.recipe_name}}</a>
+      </td>
+      <td><img src="{{object.pic.url}}" width="250" height="200" /></td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>

@@ -1,0 +1,38 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'recipes/css/style.css' %}">
+  <style>
+    body {
+      background: url("{% static 'recipes/images/kitchen_background_2.jpg' %}") no-repeat fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<header>
+  <a class="main_logout" href="{%url 'logout' %}"> Logout </a>
+  <br>
+  <br>
+</header>
+
+<h1 style="text-align: center; margin-top: 60px;">Here Are Some Details</h1>
+
+<div style="font-size: 24px; text-align: center;">
+  <b>Recipe: </b> {{object.recipe_name}} <br>
+  <b>Ingredients: </b> {{object.ingredients}} <br>
+  <b>Cooking Time: </b> {{object.cooking_time}} minutes<br>
+  <br>
+  <br>
+</div>
+
+<div style="text-align: center;">
+  <img src="{{object.pic.url}}" width="200" height="300" />
+</div>
+<br>
+<br>
+<br>
+
+<div style="text-align: center; font-size: 21px;">
+  <a href="{% url 'recipes:list' %}">Go Back to Recipes' List</a>
+</div>

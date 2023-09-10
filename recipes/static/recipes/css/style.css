@@ -1,0 +1,103 @@
+h1 {
+  font-size: 45px;
+  color: #990033;
+  text-align:center;
+  padding-top: 75px;
+}
+
+body {
+ background-color: #ffecb3;
+}
+
+a {
+  color: black;
+  font-size: 28px;
+}
+
+.main_logout {
+  float: right;
+  background-color: whitesmoke;
+  border: 5px solid green;
+  padding: 20px;
+  margin-top: 5px;
+}
+
+.about_me {
+  float: left;
+  background-color: whitesmoke;
+  border: 5px solid green;
+  padding: 20px;
+  margin-top: 5px;
+}
+
+.search_form {
+  float: center;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+
+
+.search_graphs {
+  text-align: center;
+  background-color: whitesmoke;
+  border: 5px solid lightgrey;
+  padding: 20px;
+  margin-left: 500px;
+  margin-right: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.graphics {
+  float: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*
+h3 {
+    float: center;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 5px solid green;
+    padding: 20px;
+    margin-top: 5px;
+}
+
+
+.search_graphs {
+  float: center;
+  text-align: center;
+  background-color: whitesmoke;
+  border: 5px solid lightgrey;
+  padding: 20px;
+  margin-top: 5px;
+  margin-left: 500px;
+  margin-right: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.graphics {
+  float: center;
+  text-align: center;
+  background-color: whitesmoke;
+  border: 5px solid lightgrey;
+  padding: 20px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+*/

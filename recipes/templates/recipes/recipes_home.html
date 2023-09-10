@@ -1,0 +1,35 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+
+
+<!DOCTYPE html>
+<html>
+<title>
+  Recipes Home
+</title>
+<header>
+  <h1 style="text-align: center;">Welcome to the Recipe App!</h1>
+</header>
+
+<body>
+  <h2 style="text-align: center;">Here you can create and store all of your favorite recipes at your fingertips!</h2>
+  <br>
+  <br>
+  <div style="text-align: center; font-size: 20px;">
+    <a href="{%url 'login' %}"> Login </a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div style="text-align: center;">
+    <img src="{% static 'recipes/images/Food1.jpg' %}" alt="home" width="800" height="400">
+    <img src="{% static 'recipes/images/Food2.jpg' %}" alt="home" width="800" height="400">
+    <img src="{% static 'recipes/images/Food3.jpg' %}" alt="home" width="800" height="400">
+    <img src="{% static 'recipes/images/Food4.jpg' %}" alt="home" width="800" height="400">
+  </div>
+</body>
+
+</html>

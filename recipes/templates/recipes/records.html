@@ -1,0 +1,55 @@
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'recipes/css/style.css' %}">
+  <style>
+    body {
+      background: url("{% static 'recipes/images/kitchen_background_2.jpg' %}") no-repeat fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<header>
+  <a class="main_logout" href="{%url 'logout' %}"> Logout </a>
+  <br>
+  <br>
+</header>
+
+<h1> Search for recipes </h1>
+
+
+<hr>
+<div class="search_form">
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit">search</button>
+  </form>
+</div>
+<br>
+<br>
+
+<div class="search_graphs">
+
+  {% if recipes_df %}
+  {{recipes_df|safe}}
+</div>
+
+<br>
+<br>
+
+<div class="graphics">
+
+  <img src="data:image/png;base64, {{chart|safe}}">
+
+  {% else %}
+  <h3> no data</h3>
+  {% endif %}
+</div>
+
+<br>
+<br>
+<div style="font-size: 21px; text-align: center;">
+  <a href="{% url 'recipes:list' %}">Go Back to Recipes' List</a>
+</div>
