@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','django-insecure-ml49cp(e)=yakpe
 DEBUG = False
 
 ALLOWED_HOSTS = [
-  'boiling-springs-90706-2785aea95e02.herokuapp.com',
+  'boiling-springs-90706.herokuapp.com',
   '127.0.0.1:8000',
   ]
 
