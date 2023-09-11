@@ -1,3 +1,1 @@
-web: gunicorn recipestore.wsgi:application --log-file - --log-level debug
-python manage.py collectstatic --noinput
-manage.py migrate
+web: gunicorn recipe_project.wsgi --log-file - 
