@@ -30,6 +30,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
   'boiling-springs-90706-2785aea95e02.herokuapp.com',
   '127.0.0.1:8000',
+  '127.0.0.1',
 ]
  
 #  'https://boiling-springs-90706-2785aea95e02.herokuapp.com','127.0.0.1:8000',
